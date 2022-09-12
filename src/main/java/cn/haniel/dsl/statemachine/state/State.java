@@ -21,12 +21,12 @@ public class State {
     /**
      * 状态迁移表
      * 遇到特定事件时，当前状态应该迁移的目标状态
-     * code：Transition
+     * code -> Transition
      */
     private Map<String, Transition> transitions = new HashMap<>();
 
     /**
-     * 主动事件表(进入该状态以后自动调用)
+     * 主动行为表(进入该状态以后自动执行的动作)
      */
     private List<Command> actions = new ArrayList<>();
 
